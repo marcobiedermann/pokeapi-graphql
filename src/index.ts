@@ -8,6 +8,8 @@ const server = new ApolloServer({
   dataSources,
   resolvers,
   typeDefs,
+  introspection: true,
+  playground: true,
 });
 
 server.listen(config.port).then(({ url }) => {
