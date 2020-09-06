@@ -1,16 +1,15 @@
 import { ApolloServer } from "apollo-server";
+import config from "./config";
 import dataSources from "./data-sources";
 import resolvers from "./resolvers";
 import typeDefs from "./type-defs";
 
-const schema = {
+const server = new ApolloServer({
   dataSources,
   resolvers,
   typeDefs,
-};
+});
 
-const server = new ApolloServer(schema);
-
-server.listen().then(({ url }) => {
+server.listen(config.port).then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);
 });
