@@ -1,6 +1,6 @@
 import { RESTDataSource } from "apollo-datasource-rest";
 
-interface GetPokemonArgs {
+interface Pagination {
   limit: number;
   offset: number;
 }
@@ -10,8 +10,20 @@ class PokeAPI extends RESTDataSource {
     super();
     this.baseURL = "https://pokeapi.co/api/v2/";
   }
+  getAbilities(args: Pagination) {
+    const { limit, offset } = args;
 
-  getPokemons(args: GetPokemonArgs) {
+    return this.get("ability", {
+      limit,
+      offset,
+    });
+  }
+
+  getAbility(id: string) {
+    return this.get(`ability/${id}`);
+  }
+
+  getPokemons(args: Pagination) {
     const { limit, offset } = args;
 
     return this.get("pokemon", {
