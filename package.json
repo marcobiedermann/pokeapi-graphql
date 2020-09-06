@@ -1,0 +1,26 @@
+{
+  "name": "pokeapi-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "develop": "ts-node-dev src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcobiedermann/pokeapi-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcobiedermann/pokeapi-graphql/issues"
+  },
+  "homepage": "https://github.com/marcobiedermann/pokeapi-graphql#readme",
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.62",
+    "typescript": "^4.0.2"
+  }
+}
