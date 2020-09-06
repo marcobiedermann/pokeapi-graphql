@@ -1,10 +1,12 @@
 import { ApolloServer } from "apollo-server";
+import dataSources from "./data-sources";
 import resolvers from "./resolvers";
 import typeDefs from "./type-defs";
 
 const schema = {
-  typeDefs,
+  dataSources,
   resolvers,
+  typeDefs,
 };
 
 const server = new ApolloServer(schema);
