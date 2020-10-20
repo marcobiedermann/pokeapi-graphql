@@ -1,8 +1,8 @@
 {
   "name": "pokeapi-graphql",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Unofficial GraphQL wrapper of the PokéAPI",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "develop": "ts-node-dev src/index.ts",
@@ -14,7 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/marcobiedermann/pokeapi-graphql.git"
   },
-  "keywords": [],
+  "keywords": [
+    "api",
+    "apollo",
+    "graphql",
+    "pokedex",
+    "pokemon"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
