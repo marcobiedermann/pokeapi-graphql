@@ -1,4 +1,4 @@
-import PokeAPI from "./poke-api";
+import PokeAPI from './poke-api';
 
 function dataSources() {
   return {

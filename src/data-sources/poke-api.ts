@@ -1,4 +1,4 @@
-import { RESTDataSource } from "apollo-datasource-rest";
+import { RESTDataSource } from 'apollo-datasource-rest';
 
 interface Pagination {
   limit: number;
@@ -8,12 +8,12 @@ interface Pagination {
 class PokeAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = "https://pokeapi.co/api/v2/";
+    this.baseURL = 'https://pokeapi.co/api/v2/';
   }
   getAbilities(args: Pagination) {
     const { limit, offset } = args;
 
-    return this.get("ability", {
+    return this.get('ability', {
       limit,
       offset,
     });
@@ -26,7 +26,7 @@ class PokeAPI extends RESTDataSource {
   getPokemons(args: Pagination) {
     const { limit, offset } = args;
 
-    return this.get("pokemon", {
+    return this.get('pokemon', {
       limit,
       offset,
     });
