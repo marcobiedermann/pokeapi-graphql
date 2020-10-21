@@ -1,6 +1,6 @@
 import PokeAPI from './poke-api';
 
-function dataSources() {
+function dataSources(): { pokeApi: PokeAPI } {
   return {
     pokeApi: new PokeAPI(),
   };

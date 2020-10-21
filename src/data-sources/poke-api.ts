@@ -10,6 +10,7 @@ class PokeAPI extends RESTDataSource {
     super();
     this.baseURL = 'https://pokeapi.co/api/v2/';
   }
+
   getAbilities(args: Pagination) {
     const { limit, offset } = args;
 

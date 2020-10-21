@@ -29,6 +29,14 @@ Format code using [Prettier](https://prettier.io/).
 npm run format
 ```
 
+### Linting
+
+Lint code using [ESLint](https://eslint.org/).
+
+```sh
+npm run lint
+```
+
 ## License
 
 [MIT](LICENSE) © [Marco Biedermann](https://github.com/marcobiedermann)
