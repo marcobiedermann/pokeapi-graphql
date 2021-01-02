@@ -1,13 +1,18 @@
 import dotenv from 'dotenv';
 
-const env = process.env.NODE_ENV || 'development';
+const { NODE_ENV = 'development' } = process.env;
 
 dotenv.config({
-  path: `.env.${env}`,
+  path: `.env.${NODE_ENV}`,
 });
 
-const config = {
-  env,
+interface Config {
+  env: string;
+  port: number;
+}
+
+const config: Config = {
+  env: NODE_ENV,
   port: process.env.PORT ? parseInt(process.env.PORT, 10) : 4000,
 };
 
