@@ -1,8 +1,8 @@
 # PokéAPI GraphQL
 
-[![Build Status](https://img.shields.io/travis/com/marcobiedermann/pokeapi-graphql)](https://travis-ci.com/marcobiedermann/pokeapi-graphql)
 [![dependencies Status](https://img.shields.io/david/marcobiedermann/pokeapi-graphql)](https://david-dm.org/marcobiedermann/pokeapi-graphql)
 [![devDependencies Status](https://img.shields.io/david/dev/marcobiedermann/pokeapi-graphql)](https://david-dm.org/marcobiedermann/pokeapi-graphql?type=dev)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/marcobiedermann/pokeapi-graphql/Node.js%20CI)
 
 Unofficial GraphQL wrapper of the [PokéAPI](https://pokeapi.co/).
 
