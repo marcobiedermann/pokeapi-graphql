@@ -6,4 +6,6 @@ function dataSources(): { pokeApi: PokeAPI } {
   };
 }
 
+export type DataSources = ReturnType<typeof dataSources>;
+
 export default dataSources;

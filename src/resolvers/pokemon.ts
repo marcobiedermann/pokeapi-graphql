@@ -1,4 +1,14 @@
-function pokemon(_parent: any, args: any, context: any) {
+import { DataSources } from '../data-sources';
+
+interface Args {
+  id: number;
+}
+
+interface Context {
+  dataSources: DataSources;
+}
+
+function pokemon(_parent: any, args: Args, context: Context): Promise<any> {
   const { id } = args;
   const { dataSources } = context;
 

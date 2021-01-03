@@ -1,4 +1,4 @@
-import { ApolloServer } from 'apollo-server';
+import { ApolloServer, ServerInfo } from 'apollo-server';
 import config from './config';
 import dataSources from './data-sources';
 import resolvers from './resolvers';
@@ -12,6 +12,8 @@ const server = new ApolloServer({
   playground: true,
 });
 
-server.listen(config.port).then(({ url }) => {
+server.listen(config.port).then((serverInfo: ServerInfo) => {
+  const { url } = serverInfo;
+
   console.log(`🚀 Server ready at ${url}`);
 });
