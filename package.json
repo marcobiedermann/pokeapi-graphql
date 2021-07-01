@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "apollo-datasource-rest": "^0.14.0",
-    "apollo-server": "^2.25.0",
+    "apollo-server": "^2.25.2",
     "dotenv": "^10.0.0"
   }
 }
