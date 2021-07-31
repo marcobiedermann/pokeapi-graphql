@@ -9,7 +9,6 @@ const server = new ApolloServer({
   resolvers,
   typeDefs,
   introspection: true,
-  playground: true,
 });
 
 server.listen(config.port).then((serverInfo: ServerInfo) => {
