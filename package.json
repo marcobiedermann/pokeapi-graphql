@@ -47,6 +47,6 @@
     "apollo-datasource-rest": "^3.7.0",
     "apollo-server": "^3.10.2",
     "dotenv": "^16.0.1",
-    "graphql": "^16.5.0"
+    "graphql": "^16.6.0"
   }
 }
